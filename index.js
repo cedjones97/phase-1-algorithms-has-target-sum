@@ -1,5 +1,12 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for(let i = 0; i < array.length; i++){
+    const complement = target - array[i];
+    for (let j = i + 1; j < array.length; j++){
+      if (array[j] === complement) return true
+  } 
+  
+} 
+return false
 }
 
 /* 
@@ -7,7 +14,18 @@ function hasTargetSum(array, target) {
 */
 
 /* 
-  Add your pseudocode here
+  create a function hasTargetSum 
+  if the sum of two numbers in array matches the number in target
+  return true
+  else return false
+
+*/
+
+/* 
+  function hasTargetSum
+  if [ num 1 + num 2] === target
+  return true
+  else return false
 */
 
 /*
